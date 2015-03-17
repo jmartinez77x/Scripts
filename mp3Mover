@@ -1,0 +1,35 @@
+#!/bin/bash
+clear
+
+#2/22/14
+#copies any .mp3 within Desktop to itunes folder, then to EHD_Music folder, then deletes them from Desktop  
+
+#Created by Joe Martinez
+#Should work for anyone with a little bit of modification
+
+echo
+echo "Moving .mp3 files now..."
+echo
+
+#COPY FROM DESKTOP TO iTunes
+find ~/Desktop -iname \*.mp3 -exec cp {} ~/Music/iTunes/"iTunes Media"/"Automatically Add to iTunes.localized"/ \;
+find ~/Desktop -iname \*.MP3 -exec cp {} ~/Music/iTunes/"iTunes Media"/"Automatically Add to iTunes.localized"/ \;
+
+#MOVE FROM DESKTOP TO EHD_Music
+find ~/Desktop -iname \*.mp3 -exec mv {} ~/Documents/EHD_Music/ \;
+find ~/Desktop -iname \*.MP3 -exec mv {} ~/Documents/EHD_Music/ \;
+
+# #MOVE FROM DESKTOP TO TRASH
+# find ~/Desktop -iname \*.mp3 -exec mv {} ~/.Trash \;
+# find ~/Desktop -iname \*.MP3 -exec mv {} ~/.Trash \;
+
+#DELETE TORRENT FILES
+find ~/Desktop -iname \*.torrent -exec mv {} ~/.Trash \;
+
+#LAUNCH ITUNES
+open /Applications/iTunes.app
+
+echo
+echo "Please edit the files in iTunes and upload them with Google's Music Manager."
+echo
+echo

@@ -1,0 +1,36 @@
+#!/bin/bash
+clear
+
+#2/22/14
+#Moves image files from Desktop to Backgrounds folder
+#This will find images within folders on the desktop so be cautious of any folders
+
+#Created by Joe Martinez
+#Should work for anyone with a little bit of modification
+
+echo
+echo "Moving images now..."
+echo
+
+#.jpg
+find ~/Desktop -iname \*.jpg  -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+
+#.JPG
+find ~/Desktop -iname \*.JPG  -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+
+#.jpeg
+find ~/Desktop -iname \*.jpeg -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+
+#.JPEG
+find ~/Desktop -iname \*.JPEG -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+
+#.png
+find ~/Desktop -iname \*.png  -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+
+#.PNG
+find ~/Desktop -iname \*.PNG  -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+
+echo
+echo "Done. Hopefully you didn't move anything you shouldn't have..."
+echo
+echo
