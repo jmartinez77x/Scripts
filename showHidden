@@ -1,0 +1,21 @@
+#!/bin/bash
+clear
+
+#3/17/15
+#Terminal command to show hidden files and rehide them
+
+defaults write com.apple.finder AppleShowAllFiles -bool TRUE
+killall Finder
+
+echo
+echo "Hidden files are now visible"
+echo
+
+read -p "Enter any key to make files hidden again:"
+
+defaults write com.apple.finder AppleShowAllFiles -bool FALSE
+killall Finder
+
+echo
+echo "Hidden files are now hidden"
+echo
