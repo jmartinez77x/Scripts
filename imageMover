@@ -13,22 +13,22 @@ echo "Moving images now..."
 echo
 
 #.jpg
-find ~/Desktop -iname \*.jpg  -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+find ~/Desktop -iname \*.jpg  -exec mv {} ~/Documents/Backgrounds/ \;
 
 #.JPG
-find ~/Desktop -iname \*.JPG  -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+find ~/Desktop -iname \*.JPG  -exec mv {} ~/Documents/Backgrounds/ \;
 
 #.jpeg
-find ~/Desktop -iname \*.jpeg -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+find ~/Desktop -iname \*.jpeg -exec mv {} ~/Documents/Backgrounds/ \;
 
 #.JPEG
-find ~/Desktop -iname \*.JPEG -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+find ~/Desktop -iname \*.JPEG -exec mv {} ~/Documents/Backgrounds/ \;
 
 #.png
-find ~/Desktop -iname \*.png  -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+find ~/Desktop -iname \*.png  -exec mv {} ~/Documents/Backgrounds/ \;
 
 #.PNG
-find ~/Desktop -iname \*.PNG  -exec mv {} ~/Documents/Drive_Backed/Backgrounds/ \;
+find ~/Desktop -iname \*.PNG  -exec mv {} ~/Documents/Backgrounds/ \;
 
 echo
 echo "Done. Hopefully you didn't move anything you shouldn't have..."
