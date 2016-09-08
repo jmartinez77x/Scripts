@@ -1,0 +1,16 @@
+#!/bin/bash
+clear
+
+#2016-08-30
+#Terminal command to show name of current/recent desktop backgrounds. WORKS ON OSX EL CAPITAN
+#Created by Joe Martinez
+
+# References: http://zetcode.com/db/sqlite/tool/ --- https://derflounder.wordpress.com/2013/10/26/mavericks-desktop-background-picture-settings-moved-from-librarypreferencescom-apple-desktop-plist/
+
+printf '\e[9;1t' #EXPAND TERMINAL WINDOW
+cd /Users/[INSERT USER NAME HERE]/Library/Application\ Support/Dock #CHANGE DIRECTORY 
+sqlite3 desktoppicture.db "SELECT * FROM data;" #QUERY DATABASE FOR LIST OF RECENTLY USED IMAGES
+
+echo
+echo
+echo
